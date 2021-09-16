@@ -1,0 +1,30 @@
+Source: anymarkup-core
+Section: python
+Priority: optional
+Maintainer: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>
+Build-Depends: debhelper-compat (= 13),
+               dh-python,
+               python3-all,
+               python3-configobj,
+               python3-flexmock,
+               python3-json5,
+               python3-pytest,
+               python3-setuptools,
+               python3-six,
+               python3-toml,
+               python3-xmltodict,
+               python3-yaml
+Standards-Version: 4.5.1
+Homepage: https://github.com/bkabrda/anymarkup-core
+Vcs-Browser: https://salsa.debian.org/debian/anymarkup-core
+Vcs-Git: https://salsa.debian.org/debian/anymarkup-core.git
+
+Package: python3-anymarkup-core
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Recommends: ${python3:Recommends}
+Suggests: ${python3:Suggests}
+Description: Core library for the anymarkup Python package
+ This is the core library that implements functionality of the anymarkup
+ package. This package can be installed if one wants to use a subset of
+ the anymarkup parsers.
